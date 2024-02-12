@@ -16,7 +16,7 @@ export class UserController {
     required: true,
   })
   @Get()
-  geUsers(
+  getUsers(
     @Query()
     query: PaginationDto,
   ): Promise<User[]> {
